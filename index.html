@@ -1,25 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhysioCare – Home Physiotherapy Services in Nashik</title>
-    <meta name="description" content="Professional physiotherapy services delivered at your doorstep in Nashik. Book a home visit via WhatsApp." />
-  <!-- Open Graph -->
-  <meta property="og:title" content="PhysioCare – Premium Home Physiotherapy" />
-  <meta property="og:description" content="Expert physiotherapy care at home in Nashik. Contact us on WhatsApp for an appointment." />
-  <meta property="og:image" content="/assets/og-image.jpg" />
-  <meta property="og:url" content="https://physiocare.example.com" />
-  <meta property="og:type" content="website" />
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PhysioCare – Premium Home Physiotherapy" />
-  <meta name="twitter:description" content="Book a physiotherapy home visit in Nashik via WhatsApp." />
-  <meta name="twitter:image" content="/assets/og-image.jpg" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  </head>
-  <body class="bg-white text-textPrimary font-body">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Dr. Vanshika Wayal – Licensed Physiotherapist in Nashik. Personalized home physiotherapy visits for pain relief, post‑surgery rehab, sports injuries & elderly care.">
+    <title>Dr. Vanshika Wayal | Home Physiotherapy Nashik</title>
+
+    <!-- Google Font – Inter (modern, readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Project stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===================== HEADER / NAV ===================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Dr. Vanshika Wayal Home">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span class="logo-text">Dr. Vanshika Wayal</span>
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list" id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Book Visit</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 id="hero-title">Expert Home Physiotherapy in Nashik</h1>
+                <p class="hero-subtitle">
+                    Personalized, clinic‑grade care at your doorstep – pain relief, post‑surgery rehab,
+                    sports injuries &amp; elderly mobility.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">Book a Home Visit</a>
+                    <a href="https://wa.me/917218759043" target="_blank" rel="noopener" class="btn btn-outline btn-lg">WhatsApp Now</a>
+                </div>
+                <ul class="hero-stats" aria-label="Key statistics">
+                    <li><strong>100+</strong> Happy Recoveries</li>
+                    <li><strong>4.9/5</strong> Google Rating</li>
+                    <li><strong>All Nashik</strong> Areas Covered</li>
+                </ul>
+            </div>
+
+            <div class="hero-image" aria-hidden="true">
+                <!-- Replace with a real photo of Dr. Vanshika treating a patient -->
+                <img src="assets/hero-physio.jpg"
+                     alt="Dr. Vanshika Wayal treating a patient at home"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="about-title">Meet Your Physiotherapist</h2>
+                <p class="section-tagline">Compassionate care backed by academic excellence</p>
+            </header>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/dr-vanshika.jpg"
+                         alt="Dr. Vanshika Wayal smiling"
+                         loading="lazy">
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        Dr. Vanshika Wayal brings academic excellence and clinical expertise directly to your home,
+                        helping you recover with dignity through trusted physiotherapy in Nashik.
+                    </p>
+                    <p>
+                        As a licensed physiotherapist registered with the Maharashtra State Council of Occupational Therapy,
+                        she specializes in providing personalized, evidence‑based physical therapy services for patients across Nashik.
+                        Her clinical philosophy centers on restoring functionality and movement by combining manual therapy,
+                        electrotherapy, and customized exercise therapy.
+                    </p>
+                    <p>
+                        Home‑based care ensures that patients recover in their natural environment,
+                        reducing hospital‑acquired infection risks and scheduling stresses.
+                    </p>
+                    <a href="#qualifications" class="btn btn-secondary">View Qualifications</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== QUALIFICATIONS ===================== -->
+    <section id="qualifications" class="section qualifications bg-light" aria-labelledby="qual-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="qual-title">Education &amp; Credentials</h2>
+                <p class="section-tagline">Solid academic foundation &amp; professional registration</p>
+            </header>
+
+            <div class="qual-cards">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c0 3 2 5 5 5h1c3 0 5-2 5-5v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Bachelor of Physiotherapy (BPT)</h3>
+                    <p class="card-sub">PIMS University – Dr. APJ Abdul Kalam College of Physiotherapy</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Registered Practitioner</h3>
+                    <p class="card-sub">Maharashtra State Council of Occupational Therapy</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"/>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                        </svg>
+                    </div>
+                    <h3>Continuing Education</h3>
+                    <p class="card-sub">Regular workshops on manual therapy, dry needling &amp; electrotherapy</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES / CONDITIONS ===================== -->
+    <section id="services" class="section services" aria-labelledby="services-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="services-title">Conditions We Treat at Home</h2>
+                <p class="section-tagline">
+                    Customized clinical treatment for structural, muscular, neurological &amp; post‑operative dysfunctions
+                </p>
+            </header>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Back Pain &amp; Sciatica</h3>
+                    <p>Decompression, postural correction, core activation &amp; pain‑management for slipped discs, spasms, stenosis.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Neck &amp; Shoulder Pain</h3>
+                    <p>Cervical spondylosis, frozen shoulder, postural headaches – manual mobilization, stretching, dry needling.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Knee Pain &amp; Arthritis</h3>
+                    <p>Cartilage unloading, joint mobilization, quad strengthening for OA &amp; delayed surgery.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Sports Injuries</h3>
+                    <p>ACL tears, ankle sprains, tennis elbow, rotator cuff – scientific rehab for safe return to sport.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Post‑Surgery Rehab</h3>
+                    <p>TKR, THR, ligament reconstruction, fracture surgeries – structured recovery plans.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Elderly Care &amp; Balance</h3>
+                    <p>Fall prevention, balance training, endurance &amp; mobility for active independence.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" class="section process bg-light" aria-labelledby="process-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="process-title">Our Home Physiotherapy Process</h2>
+                <p class="section-tagline">A four‑step clinical pathway from acute pain to optimal function</p>
+            </header>
+
+            <ol class="process-steps">
+                <li class="step">
+                    <span class="step-number">01</span>
+                    <h3>Clinical Assessment</h3>
+                    <p>Comprehensive evaluation of ROM, strength, joint stability &amp; neurological reflexes at your home.</p>
+                </li>
+                <li class="step">
+                    <span class="step-number">02</span>
+                    <h3>Custom Treatment Plan</h3>
+                    <p>Roadmap with clear timelines, custom exercises &amp; active manual therapies.</p>
+                </li>
+                <li class="step">
+                    <span class="step-number">03</span>
+                    <h3>Interactive Home Visits</h3>
+                    <p>Scheduled visits with portable TENS/ultrasound, hands‑on treatment &amp; supervised exercises.</p>
+                </li>
+                <li class="step">
+                    <span class="step-number">04</span>
+                    <h3>Recovery Monitoring</h3>
+                    <p>Standardized metrics, dynamic intensity adjustments &amp; transition planning.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section id="reviews" class="section reviews" aria-labelledby="reviews-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="reviews-title">Patient Stories</h2>
+                <p class="section-tagline">Real recoveries, real people across Nashik</p>
+            </header>
+
+            <div class="reviews-slider" role="region" aria-label="Patient testimonials">
+                <article class="review-card">
+                    <blockquote>
+                        "Dr. Vanshika provided excellent post‑surgery rehab for my father after his Total Knee Replacement.
+                        Her patience and encouragement helped him walk confidently within 4 weeks. Highly recommended in Indira Nagar!"
+                    </blockquote>
+                    <footer>— Rajesh Patil, Son of TKR Patient • Indira Nagar, Nashik</footer>
+                </article>
+
+                <article class="review-card">
+                    <blockquote>
+                        "I suffered severe lower back pain &amp; sciatica for months. Walking 50 m was painful.
+                        Dr. Vanshika diagnosed my spinal imbalance on day one and curated an excellent exercise routine.
+                        Today I am pain‑free. Thanks!"
+                    </blockquote>
+                    <footer>— Meera Deshmukh, IT Consultant • College Road, Nashik</footer>
+                </article>
+
+                <article class="review-card">
+                    <blockquote>
+                        "Excellent therapist for geriatric care. We hired her for my 78‑year‑old mother with osteoarthritis &amp; balance issues.
+                        Gentle mobilization &amp; balance training vastly improved her daily walking safety."
+                    </blockquote>
+                    <footer>— Amit Shah, Business Owner • Gangapur Road, Nashik</footer>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section faq bg-light" aria-labelledby="faq-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="faq-title">Frequently Asked Questions</h2>
+                <p class="section-tagline">Quick answers to common queries</p>
+            </header>
+
+            <dl class="faq-list">
+                <div class="faq-item">
+                    <dt>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                            What areas in Nashik do you cover for home physiotherapy?
+                        </button>
+                    </dt>
+                    <dd id="faq-1" class="faq-answer" hidden>
+                        We provide home physiotherapy visits across all major localities in Nashik,
+                        including College Road, Gangapur Road, Indira Nagar, Pathardi Phata, Cidco, Govind Nagar, Mahatma Nagar, and Nashik Road.
+                    </dd>
+                </div>
+                <div class="faq-item">
+                    <dt>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                            What are the session charges for home visit physiotherapy?
+                        </button>
+                    </dt>
+                    <dd id="faq-2" class="faq-answer" hidden>
+                        Fees depend on location &amp; complexity, generally ₹600–₹1200 per session. Discounted packages for 10‑15 session bundles are available.
+                    </dd>
+                </div>
+                <div class="faq-item">
+                    <dt>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                            How long does each home physiotherapy session take?
+                        </button>
+                    </dt>
+                    <dd id="faq-3" class="faq-answer" hidden>
+                        A standard session lasts 45‑60 minutes, including assessment check, hands‑on treatment, electrotherapy (if needed) and supervised therapeutic exercises.
+                    </dd>
+                </div>
+                <div class="faq-item">
+                    <dt>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                            Do I need to buy any treatment equipment?
+                        </button>
+                    </dt>
+                    <dd id="faq-4" class="faq-answer" hidden>
+                        No. Dr. Vanshika brings all portable modalities (TENS, ultrasound, heating pads), exercise bands, balls &amp; therapeutic gear directly to your home.
+                    </dd>
+                </div>
+                <div class="faq-item">
+                    <dt>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                            Is a doctor's prescription mandatory for home physiotherapy?
+                        </button>
+                    </dt>
+                    <dd id="faq-5" class="faq-answer" hidden>
+                        A prescription is helpful but not mandatory. We perform a thorough physical assessment during the first visit to diagnose the movement dysfunction and create a custom treatment plan.
+                    </dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT / BOOKING ===================== -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 id="contact-title">Book a Home Physiotherapy Visit</h2>
+                <p>Fill out the quick form or contact Dr. Vanshika directly for emergency post‑operative calls.</p>
+                <ul class="contact-details">
+                    <li><a href="tel:+917218759043"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 72187 59043</a></li>
+                    <li><a href="mailto:vanshikawayal@gmail.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> vanshikawayal@gmail.com</a></li>
+                    <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> College Road, Nashik, Maharashtra 422005</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://wa.me/917218759043" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378 9.86 9.86 0 0 1-3.34-4.365 9.87 9.87 0 0 1 3.523-5.02 9.87 9.87 0 0 1 5.031-1.378 9.87 9.87 0 0 1 5.03 1.378 9.87 9.87 0 0 1 3.34 4.365 9.87 9.87 0 0 1-3.523 5.02 9.87 9.87 0 0 1-5.03 1.378"/></svg></a>
+                </div>
+            </div>
+            <form id="booking-form" class="booking-form" novalidate>
+                <div class="form-row">
+                    <label for="patientName">Patient Name <span class="required" aria-hidden="true">*</span></label>
+                    <input type="text" id="patientName" name="patientName" required autocomplete="name">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number <span class="required" aria-hidden="true">*</span></label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 XXXXXXXXXX">
+                </div>
+                <div class="form-row">
+                    <label for="condition">Condition to Treat <span class="required" aria-hidden="true">*</span></label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Select condition</option>
+                        <option>Back Pain & Sciatica</option>
+                        <option>Neck & Shoulder Pain</option>
+                        <option>Knee Pain & Arthritis</option>
+                        <option>Sports Injury</option>
+                        <option>Post‑Surgery Rehabilitation</option>
+                        <option>Elderly Care / Balance Rehabilitation</option>
+                        <option>Other / General Pain Management</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="locality">Locality in Nashik <span class="required" aria-hidden="true">*</span></label>
+                    <select id="locality" name="locality" required>
+                        <option value="">Select locality</option>
+                        <option>Indira Nagar</option>
+                        <option>College Road</option>
+                        <option>Gangapur Road</option>
+                        <option>Pathardi Phata</option>
+                        <option>Govind Nagar</option>
+                        <option>Cidco</option>
+                        <option>Nashik Road</option>
+                        <option>Other Area in Nashik</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="startDate">Preferred Start Date</label>
+                    <input type="date" id="startDate" name="startDate">
+                </div>
+                <div class="form-row">
+                    <label for="notes">Brief Case Description</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Any relevant medical history, surgery dates, current symptoms…"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                <p class="form-disclaimer">Your clinical data and details are fully confidential.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <p class="footer-name">Dr. Vanshika Wayal</p>
+                <p>Professional, licensed physiotherapist providing clinical‑grade home visits &amp; recovery rehabilitation across Nashik.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Practitioner</a></li>
+                    <li><a href="#services">All Services</a></li>
+                    <li><a href="#services">Conditions Treated</a></li>
+                    <li><a href="#process">Home Care Process</a></li>
+                    <li><a href="#reviews">Patient Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <address>
+                    <a href="tel:+917218759043">+91 72187 59043</a><br>
+                    <a href="mailto:vanshikawayal@gmail.com">vanshikawayal@gmail.com</a><br>
+                    College Road, Nashik, Maharashtra 422005
+                </address>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Vanshika Wayal, PT. All rights reserved.</p>
+            <p>Developed with ❤️ by <a href="https://github.com/yourname" target="_blank" rel="noopener">Your Name</a></p>
+            <p><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
