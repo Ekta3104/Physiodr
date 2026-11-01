@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const items = [
   { q: 'What is home physiotherapy?', a: 'Home physiotherapy brings certified therapists to your residence to assess and treat musculoskeletal and neurological conditions.' },
   { q: 'How can I book an appointment?', a: 'Use the contact form below or click any WhatsApp button to start a conversation.' },
-  { q: 'Which areas of Nashik do you cover?', a: 'We serve the entire Nashik district; exact service‑area list is editable in the configuration.' },
+  { q: 'Which areas of Buldhana do you cover?', a: 'We currently provide home visits in Buldhana City. Please contact us to confirm availability for your address.' },
   { q: 'What should I prepare before a home visit?', a: 'A clear space for treatment, a stable chair or mat, and any relevant medical documents.' },
   { q: 'How can I contact the physiotherapist?', a: 'Phone, email, or WhatsApp – see the Contact section.' },
   { q: 'What are the consultation charges?', a: 'Charges are discussed individually; please ask via WhatsApp for a quote.' },

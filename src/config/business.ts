@@ -4,16 +4,12 @@ export const businessConfig = {
   qualification: 'M.D., MS (Physiotherapy)',
   experience: '10+ years',
   registrationNumber: 'MH/PHYSIO/12345',
-  phone: '+91-XXXXXXXXXX',
-  whatsappNumber: '+91XXXXXXXXXX', // replace with actual number
+  phone: '+91 63765 82130',
+  whatsappNumber: '+91 63765 82130',
   email: 'contact@physiocare.com',
-  city: 'Nashik, Maharashtra, India',
+  city: 'Buldhana, Maharashtra, India',
   serviceAreas: [
-    'Nashik City',
-    'Aundh',
-    'Khalapur',
-    'Satpur',
-    // add more as needed
+    'Buldhana City',
   ],
   workingHours: 'Mon‑Fri: 9am‑7pm, Sat: 9am‑5pm',
   profileImage: '/assets/doctor-placeholder.jpg', // place in public/assets

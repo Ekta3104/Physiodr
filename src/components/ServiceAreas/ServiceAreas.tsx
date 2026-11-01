@@ -4,7 +4,7 @@ export default function ServiceAreas() {
   return (
     <section className="py-20">
       <div className="container mx-auto text-center">
-        <h2 className="font-heading text-3xl text-primary mb-6">Home Physiotherapy Services Across Nashik</h2>
+        <h2 className="font-heading text-3xl text-primary mb-6">Home Physiotherapy Services Across Buldhana</h2>
         <p className="text-textPrimary mb-8">We currently serve the following areas (editable):</p>
         <ul className="flex flex-wrap justify-center gap-4">
           {businessConfig.serviceAreas.map(area => (

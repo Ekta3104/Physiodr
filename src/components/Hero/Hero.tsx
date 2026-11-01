@@ -11,14 +11,14 @@ export default function Hero() {
             Expert Physiotherapy Care, Right at Your Home.
           </h1>
           <p className="text-lg text-textPrimary">
-            Personalized physiotherapy and rehabilitation services delivered to your doorstep in Nashik. Get professional care in the comfort of your home.
+            Personalized physiotherapy and rehabilitation services delivered to your doorstep in Buldhana. Get professional care in the comfort of your home.
           </p>
           <div className="flex space-x-4">
             <a href="#contact" className="btn-primary">
               Book a Home Visit
             </a>
             <a
-              href={`https://wa.me/${businessConfig.whatsappNumber.replace(/^\+/, '')}?text=${encodeURIComponent('Hello, I would like to book a home physiotherapy visit.')}`}
+              href={`https://wa.me/${businessConfig.whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent('Hello, I would like to book a home physiotherapy visit.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline flex items-center space-x-2"

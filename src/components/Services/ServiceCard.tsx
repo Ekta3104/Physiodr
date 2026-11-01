@@ -8,7 +8,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ title, description, imageSrc }: ServiceCardProps) {
-  const waLink = `https://wa.me/${businessConfig.whatsappNumber.replace(/^\+/, '')}?text=${encodeURIComponent(`Hello, I am interested in ${title} service.`)}`;
+  const waLink = `https://wa.me/${businessConfig.whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(`Hello, I am interested in ${title} service.`)}`;
   return (
     <div className="rounded-lg overflow-hidden shadow-md bg-white hover:shadow-xl transition flex flex-col h-full">
       <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />

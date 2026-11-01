@@ -21,7 +21,7 @@ export default function BookingForm() {
 
   const onSubmit = (data: FormData) => {
     const message = `Hello Doctor,%0A%0AI would like to request a home physiotherapy appointment.%0A%0APatient Name: ${data.name}%0AMobile: ${data.mobile}%0AService: ${data.service}%0APreferred Date: ${data.date}%0APreferred Time: ${data.time}%0AArea: ${data.area}%0AProblem: ${data.description ?? ''}%0A%0APlease let me know your availability.%0AThank you.`;
-    const url = `https://wa.me/${businessConfig.whatsappNumber.replace(/^\+/, '')}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${businessConfig.whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
@@ -57,7 +57,7 @@ export default function BookingForm() {
       <input type="time" {...register('time')} className="input" />
       {errors.time && <p className="text-red-500 text-sm">{errors.time.message}</p>}
 
-      <input {...register('area')} placeholder="Area in Nashik" className="input" />
+      <input {...register('area')} placeholder="Area in Buldhana" className="input" />
       {errors.area && <p className="text-red-500 text-sm">{errors.area.message}</p>}
 
       <textarea {...register('description')} placeholder="Short problem description (optional)" className="input" rows={3} />
